@@ -29,7 +29,7 @@ Avant de démarrer, assurez-vous d'avoir les éléments suivants :
 3. Ajoutez vos fichiers de configuration :
     - Placez votre fichier de credentials à la racine de `Première vague labels`.
     - Configurez un fichier credentials.json pour l'API Gmail.
-3. Mettez à jour les variables nécessaires :
+4. Mettez à jour les variables nécessaires :
     - Remplacez `creds_firebase.json` par votre fichier de credentials firebase
     - Ajoutez votre clé API Mistral dans la variable `api_key`.
 

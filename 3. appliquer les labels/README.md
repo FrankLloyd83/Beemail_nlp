@@ -33,7 +33,7 @@ Avant de commencer, assurez-vous d'avoir :
 
 1. Clonez le dépôt :
    ```bash
-   git clone hhttps://github.com/solene-drnx/Beemail---public.git
+   git clone https://github.com/solene-drnx/Beemail---public.git
    cd "3. appliquer les labels"
 2. Placez le fichier credentials.json dans le répertoire principal.
 3. Installez les dépendances :

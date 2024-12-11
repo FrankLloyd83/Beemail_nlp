@@ -1,6 +1,6 @@
 # Label Categorization with Mistral AI
 
-Ce script nettoie les labels récupéré apres le premier tour de labels avec l'IA. Il parcourt une liste de labels issus de `1. premiere vague labels`, les analyse à l'aide du modèle Mistral, et génère une sortie catégorisée dans un fichier JSON.
+Ce script nettoie les labels récupérés apres le premier tour de labels avec l'IA. Il parcourt une liste de labels issus de `1. premiere vague labels`, les analyse à l'aide du modèle Mistral, et génère une sortie catégorisée dans un fichier JSON.
 
 ## 🥰 Fonctionnalités
 
@@ -25,7 +25,7 @@ Avant d'exécuter ce script, assurez-vous d'avoir :
 2. La bibliothèque `mistralai` installée :
    ```bash
    pip install mistralai
-3. Un fichier labels_avant.py contenant les données `LABELS`récupérés depuis firebase
+3. Un fichier labels_avant.py contenant les données `LABELS` récupérées depuis firebase
 4. Une clé API valide pour le modèle Mistral.
 
 ## 🧐 Installation
