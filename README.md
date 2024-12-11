@@ -2,8 +2,8 @@
 
 Coucou, petit projet pour analyser et trier sa boite mail gmail. Le projet est structuré en trois 
 scripts : 
-1. Premiere vague label : établi un premier label sur le mail
-2. Deuxieme vague labels : nettoie les labels obtenu dans le premier tour pour les uniformiser
+1. Première vague label : établit un premier label sur le mail
+2. Deuxième vague labels : nettoie les labels obtenus dans le premier tour pour les uniformiser
 3. Appliquer les labels : applique les différents labels obtenus aux mails de notre boite mails
 
 ## 📦 Technos
