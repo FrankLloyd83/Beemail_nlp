@@ -167,7 +167,10 @@ def fill_data(service, data_id):
 
     Args:
         service ():
-        data_id (Table): Tableau de données
+        data_id (dict): Dictionnaire avec les id et threadId des mails
+
+    Returns:
+        data_id (dict): Dictionnaire avec les id, threadId, objet, expediteur et contenu des mails
     """
     for mail in data_id:
         mail_id = mail["id"]
@@ -178,3 +181,5 @@ def fill_data(service, data_id):
 
     with open("data/mails.json", "w", encoding="utf-8") as file_id:
         json.dump(data_id, file_id, ensure_ascii=False, indent=4)
+
+    return data_id
