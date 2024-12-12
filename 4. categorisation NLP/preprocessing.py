@@ -28,13 +28,12 @@ def preprocess_mails(mails):
     Returns:
         list of str: Liste de textes prétraités.
     """
-    stop_words = set(stopwords.words("french"))
+    stop_words = set(stopwords.words("english"))
     lemmatizer = WordNetLemmatizer()
-    preprocessed = []
 
     for mail in mails:
         # Nettoyer le texte (exemple : enlever les balises HTML et caractères spéciaux)
-        text = mail.get("subject", "") + " " + mail.get("body", "")
+        text = mail.get("objet", "") + " " + mail.get("contenu", "")
         text = re.sub(r"<[^>]+>", " ", text)  # Supprime les balises HTML
         text = text.lower()  # Convertit en minuscules
 
@@ -47,10 +46,10 @@ def preprocess_mails(mails):
             if word.isalpha() and word not in stop_words and len(word) >= 3
         ]
 
-        preprocessed.append(" ".join(tokens))
+        mail["preprocessed"] = " ".join(tokens)
 
     # Enregistrer les résultats prétraités dans un fichier JSON
-    with open("data/preprocessed_mails.json", "w", encoding="utf-8") as f:
-        json.dump(preprocessed, f, ensure_ascii=False, indent=4)
+    with open("data/mails.json", "w", encoding="utf-8") as f:
+        json.dump(mails, f, ensure_ascii=False, indent=4)
 
-    return preprocessed
+    return mails
